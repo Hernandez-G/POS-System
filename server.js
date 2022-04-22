@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
 
@@ -25,8 +26,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.used(methodOverride('_method'));
+app.use(methodOverride('_method'));
 
+
+// new code below
+app.use(session({
+  secret: process.env.SECRET,
+  resave: false,
+  saveUninitialized: true
+}));
 
 //Passport middleware
 app.use(passport.initialize());
@@ -38,9 +46,19 @@ app.use(function(req, res, next){
   next();
 });
 
+//make user ava. within every EJS temp. 
+app.use(function(req, res, next){
+  res.locals.user = req.user;
+  next();
+});
+
+
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
