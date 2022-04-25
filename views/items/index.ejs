@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+<section id="categories">
+  <% categories.forEach(function(c) { %>
+    <a href="/items?category=<%= c %>"><%= c %></a> &nbsp; &nbsp; &nbsp;
+  <% }); %>
+</section>
+
+<section id="items">
+  <% items.forEach(function(item) { %>
+    <div><%= item.name %> - <%= item.price %></div>
+
+
+  <% }); %>
+</section>
+
+<%- include('../partials/footer') %>

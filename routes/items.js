@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const categoriesCtrl = require('../controllers/categories');
+const itemsCtrl = require('../controllers/items');
 // const isLoggedIn = require('../config/auth');
 
-router.get('/', categoriesCtrl.index);
+router.get('/', itemsCtrl.index);
 
-router.get('/:id', categoriesCtrl.show);
+router.get('/:id', itemsCtrl.show);
 
 // router.post('/', isLoggedIn, categoriesCtrl.create);
 
