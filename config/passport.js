@@ -34,3 +34,12 @@ passport.use(
     }
   )
 );
+
+passport.serializeUser(function(user, cb) {
+  cb(null, user._id);
+});
+
+passport.deserializeUser(async function(userId, cb) {
+  const user = await User.findById(userId);
+  cb(null, user);
+});

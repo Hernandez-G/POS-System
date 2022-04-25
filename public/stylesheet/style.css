@@ -1,0 +1,36 @@
+body{
+  padding: 100px;
+  background-color: #e8efdd;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* nav{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 10px;
+} */
+
+
+
+.container{
+  border: solid 2px #688e4a;
+  width: 200px;
+  height: 140px;
+  border-radius: 3px;
+  background-color: #dae4d2;
+}
+
+a {
+  font-family: 'Ranchers', cursive;
+  font-size: 35px;
+  color: #83a767;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: #6f895b 
+}
+div{
+  padding: 5px;
+}
