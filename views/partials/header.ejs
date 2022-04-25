@@ -12,30 +12,14 @@
     <title><%= title %></title>
 </head>
 <body>
-    <nav>
-        <!-- <a href="/">HOME</a> -->
-        <!-- <button><a href="/logout">LOG OUT</a></button> -->
-        <!-- <a href="/auth/google" class="login">LOG IN</a> -->
-    </nav>
+    <% if (user) { %>
+        <nav>
+            <a href="/">HOME</a>
+            <button><a href="/logout">LOG OUT</a></button>
+        </nav>
+    <% } %>
     <main>
-        <h1><%= title%></h1>
+        <h1><%= title %></h1>
 
-        <div class="text-center center-div" id="login">
-            <div class="container">
-                <br>
-                <a href="/auth/google" class="login">Cafe deLaSol</a>
-                <!-- </div>
-                <form action="#">
-                <div class="form-group">
-                    <input type="email" class="form-control" required placeholder="email">
-                    <small class="form-text text-muted text-left">New Employee?</small>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control"  required  placeholder="password">
-                </div> 
-             <br>
-            <br>
-              <button><a href="/auth/google" class="login">LOG IN</a></button> 
-             
            
     

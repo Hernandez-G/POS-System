@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+
+<table id="list">
+    <thead>
+      <tr>
+        <th>Drinks</th>
+        <th>Pastry</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% categories.forEach(function(c) { %>
+        <tr>
+          <td><%= c.drink %></td>
+          <td><%= c.pastry %></td>
+          <!-- <td><a href="/categories/<%= c._id %>">[blank]</a></td> -->
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+
+<%- include('../partials/footer') %>
