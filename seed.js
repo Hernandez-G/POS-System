@@ -18,6 +18,7 @@ Item.deleteMany({})
       {name: 'Latte', price: 5.25, category: 'Drinks' }, 
       {name: 'Gibraltar', price: 3.25, category: 'Drinks' }, 
       {name: 'Cappuccino', price: 4.25, category: 'Drinks' }, 
+      {name: 'Espresso', price: 2.25, category: 'Drinks' }, 
       {name: 'Concha', price: 3.25, category: 'Pastries' }, 
       {name: 'Mantecado', price: 2.25, category: 'Pastries' }, 
       {name: 'Puerquito', price: 2.15, category: 'Pastries' }

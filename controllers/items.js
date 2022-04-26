@@ -14,5 +14,5 @@ function index(req, res){
 
 function show(req, res) {
     Item.findById(req.params.id)
-    res.render('items/show', { item: items });
+    res.render('items/show', { items, categories });
 }

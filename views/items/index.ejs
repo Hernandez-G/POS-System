@@ -9,9 +9,16 @@
 <section id="items">
   <% items.forEach(function(item) { %>
     <div>
-      <%= item.name %> 
-      <%= item.price %>
-  </div>
+     <a class="button" href="#popup"> <%= item.name %> </a>
+     <div id="popup" class="overlay">
+       <div class="box">
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <%= item.price %>
+      </div>
+      </div>
+      </div>
+      </div>
   <% }); %>
 </section>
 

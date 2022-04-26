@@ -55,3 +55,67 @@ tr > #baked{
   display: flex;
   gap: 10%;
 }
+
+.button {
+  font-size: 14px;
+  border: 2px solid grey;
+  border-radius: 7px;
+  border-color: grey;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background-color: lightgrey;
+}
+
+.box {
+  margin: 10px auto;
+  padding: 10px;
+  background: #fff;
+  position: relative;
+  width: 50%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0,0,0,0.7);
+  transition: opacity 500ms;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.box .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.box .close:hover {
+  color: #06D85F;
+}
+
+.box .content {
+  max-height: 30%;
+  overflow: auto;
+} 
