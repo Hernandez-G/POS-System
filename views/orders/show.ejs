@@ -1,0 +1,26 @@
+<%- include('../partials/header')%>
+
+<section id="order-detail">
+<!-- if else statement using flounders -->
+
+<% if (order.currentForUser) { %>
+    <h2> Current Order </h2>
+<% } else { %>
+    <h2> Previous Order </h2>
+<% } %>
+
+<p>Order Id <%= order._id %></p>
+<hr>
+
+<h3>Items</h3>
+
+<% order.items.forEach(function(item){ %>
+    <div>
+        <p><%= item.name %></p>
+    </div>
+<% }) %>
+
+</section>
+
+
+<%- include('../partials/footer')%>

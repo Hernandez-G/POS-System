@@ -12,13 +12,17 @@
      <a class="button" href="#popup"> <%= item.name %> </a>
      <div id="popup" class="overlay">
        <div class="box">
-        <a class="close" href="#">&times;</a>
-        <div class="content">
-          <%= item.price %>
+         <a class="close" href="#">&times;</a>
+         <div class="content">
+           <%= item.price %>
+           <div class="price">Price:</div>
+          </div>
+          <form action="/orders/item/<%= item._id %>" method="POST">
+            <button type="submit">Add to Order</button>
+        </form>
       </div>
-      </div>
-      </div>
-      </div>
+    </div>
+  </div>
   <% }); %>
 </section>
 
