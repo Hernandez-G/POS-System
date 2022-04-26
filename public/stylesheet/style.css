@@ -51,7 +51,6 @@ tr{
   font-size: 15px;
   justify-content: space-between;
 }
-
 tr > #baked{
   display: flex;
   gap: 10%;
