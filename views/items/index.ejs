@@ -7,10 +7,11 @@
 </section>
 
 <section id="items">
-  <% items.forEach(function(item) { %>
+  <% items.forEach(function(item, idx) { %> 
+    <% console.log(item._id) %>
     <div>
-     <a class="button" href="#popup"> <%= item.name %> </a>
-     <div id="popup" class="overlay">
+     <a class="button" href="#popup<%= idx %>"> <%= item.name %> </a>
+     <div id="popup<%= idx %>" class="overlay">
        <div class="box">
          <a class="close" href="#">&times;</a>
          <div class="content">
@@ -26,13 +27,13 @@
   <% }); %>
 
   <!-- edit this to go into the drink item boxes -->
-  <div id="edit">
+  <!-- <div id="edit">
     <form action="`/orders/${order._id}`" method="POST">
         <input type="text" id="edit-item">
         <input type="submit" value="Save">
         <a onclick="CloseInput()">&#10006;</a>
     </form>
-  </div>
+  </div> -->
   <!-- end of code -->
 </section>
 

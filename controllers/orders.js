@@ -4,19 +4,36 @@ const Order = require('../models/order');
 module.exports = {
     addItem,
     show,
-    // update
-    // deleteItem,
-    // update
+    deleteItem,
+    send,
+    orderScreen
 };
 
+async function orderScreen(req, res){
+    const orders = await Order.find({active: true});
+    res.render('orders/screen', { title: 'Active Orders', orders });
+}
 
-// function deleteItem(req, res) {
-//     Order.findOneAndDelete(
-//         {_id: req.params.id, itemId: req.user._id}, function(err){
-//             res.redirect(`/orders/${Order._id}`);
-//         }
-//     )
-// }
+async function send (req, res) {
+    const order = await  Order.findOne({user: req.user._id, currentForUser: true});
+    order.currentForUser = false;
+    await order.save();
+    res.redirect('/items');
+}
+
+
+
+function deleteItem(req, res) {
+    Order.findOne(
+        {"items._id": req.params.itemId, "items.user": req.user._id}, function(err, order){
+            if (!order || err) return res.redirect(`/orders/${order._id}`)
+            order.items.remove(req.params.itemId);
+            order.save(function(err){
+                res.redirect(`/orders/${order._id}`);
+            });
+        }
+    )
+}
 
 async function show(req, res){
     const order = await Order.findById(req.params.id);

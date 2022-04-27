@@ -6,8 +6,8 @@ module.exports = {
     index,
     show,
     new: newOrder,
-    create,
-    deleteItem
+    // create,
+    // deleteItem
 }
 
 function index(req, res){
@@ -30,18 +30,18 @@ function newOrder(req, res) {
     res.render('/orders', { title: 'Add to Order' });
 }
 
-function create(req, res){
-        const Item = new Item(req.body);
-        Item.save(function(err){
-            if(err) return res.render('items');
-            res.redirect('/items')
-        })
-    }
+// function create(req, res){
+        // const Item = new Item(req.body);
+        // Item.save(function(err){
+        //     if(err) return res.render('items');
+        //     res.redirect('/items')
+        // })
+    // }
 
-function deleteItem(req, res) {
-    Order.findOneAndDelete(
-        {_id: req.params.id, itemId: req.user._id}, function(err){
-        res.redirect(`/orders/${Order._id}`);
- }
-)
-}
+// function deleteItem(req, res) {
+//     Order.findOneAndDelete(
+//         {_id: req.params.id, itemId: req.user._id}, function(err){
+//         res.redirect(`/orders/${Order._id}`);
+//  }
+// )
+// }

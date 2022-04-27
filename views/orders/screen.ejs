@@ -1,0 +1,20 @@
+<%- include('../partials/header')%>
+
+<!-- css grid -->
+
+<section id="active-orders">
+<% orders.forEach(function(order){ %>
+    <article>
+        <p>Order ID: <%= order._id %></p>
+        <p>Order Time: <%= order.updatedAt %></p>
+
+
+    </article>
+    
+<% }) %>
+
+
+
+</section>
+
+<%- include('../partials/footer')%>

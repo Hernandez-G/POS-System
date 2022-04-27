@@ -5,7 +5,9 @@ const ordersCtrl = require('../controllers/orders');
 
 router.post('/item/:itemId', ordersCtrl.addItem);
 router.get('/:id', ordersCtrl.show);
-// router.delete('/items/:itemId', ordersCtrl.deleteItem);
+router.delete('/item/:itemId', ordersCtrl.deleteItem);
+router.post('/send', ordersCtrl.send);
+router.get('/', ordersCtrl.orderScreen);
 
 
 

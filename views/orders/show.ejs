@@ -19,15 +19,19 @@
         <p><%= item.name %></p>
     </div>
     <!-- REMEMBER TO CHECK ROUTES! -->
-    <a href="/orders/<% order._id %>"  method="DELETE">Delete</a>
+    <form action="/orders/item/<%= item._id %>?_method=DELETE" method="POST">
+        <button type="submit">remove</button>
+    </form>
     <!-- REMEMBER TO CHECK ROUTES! -->
 
 <% }) %>
 
+<a href="/items">Return to Items</a>
+<form action="/orders/send" method="POST">
+    <button type="submit">SEND ORDER</button>
 
+</form>
 
-
-<!-- <form action:"" method="DELETE"></form> -->
 </section>
 
 

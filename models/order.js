@@ -17,6 +17,8 @@ const orderSchema = new Schema ({
         type: Boolean,
         default: true
     }
+}, {
+    timestamps: true
 });
 
 
