@@ -1,6 +1,6 @@
 <%- include('../partials/header')%>
 
-<section id="order-detail">
+<section id="order-details">
 <!-- if else statement using flounders -->
 
 <% if (order.currentForUser) { %>
@@ -18,8 +18,16 @@
     <div>
         <p><%= item.name %></p>
     </div>
+    <!-- REMEMBER TO CHECK ROUTES! -->
+    <a href="/orders/<% order._id %>"  method="DELETE">Delete</a>
+    <!-- REMEMBER TO CHECK ROUTES! -->
+
 <% }) %>
 
+
+
+
+<!-- <form action:"" method="DELETE"></form> -->
 </section>
 
 

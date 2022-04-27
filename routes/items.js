@@ -8,6 +8,8 @@ router.get('/', itemsCtrl.index);
 router.get('/new', itemsCtrl.new);
 router.get('/:id', itemsCtrl.show);
 router.post('/', itemsCtrl.create);
+router.delete('/items/:itemId', itemsCtrl.deleteItem);
+
 
 router.post('/', isLoggedIn, itemsCtrl.create);
 

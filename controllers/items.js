@@ -6,7 +6,8 @@ module.exports = {
     index,
     show,
     new: newOrder,
-    create
+    create,
+    deleteItem
 }
 
 function index(req, res){
@@ -14,6 +15,7 @@ function index(req, res){
     Item.find({category: req.query.category}, function(err, items) {
         res.render('items/index', { title: 'Menu', items, categories });
 });
+
 }
 
 function show(req, res) {
@@ -35,3 +37,11 @@ function create(req, res){
             res.redirect('/items')
         })
     }
+
+function deleteItem(req, res) {
+    Order.findOneAndDelete(
+        {_id: req.params.id, itemId: req.user._id}, function(err){
+        res.redirect(`/orders/${Order._id}`);
+ }
+)
+}

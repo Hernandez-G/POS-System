@@ -3,12 +3,24 @@ const Order = require('../models/order');
 
 module.exports = {
     addItem,
-    show
+    show,
+    // update
+    // deleteItem,
+    // update
 };
+
+
+// function deleteItem(req, res) {
+//     Order.findOneAndDelete(
+//         {_id: req.params.id, itemId: req.user._id}, function(err){
+//             res.redirect(`/orders/${Order._id}`);
+//         }
+//     )
+// }
 
 async function show(req, res){
     const order = await Order.findById(req.params.id);
-    res.render('orders/show', { title: 'Order Detail', order });
+    res.render('orders/show', { title: 'Order Details', order });
 }
 
 async function addItem (req, res) {
