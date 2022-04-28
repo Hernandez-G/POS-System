@@ -11,8 +11,10 @@ module.exports = {
 };
 
 async function orderScreen(req, res){
-    const orders = await Order.find({active: true});
-    res.render('orders/screen', { title: 'Active Orders', orders });
+    //oldest at the top
+    const orders = await Order.find({active: true}).sort('updatedAt');
+    const servedOrders = await Order.find({active: false, currentForUser: false}).sort('-updatedAt');
+    res.render('orders/screen', { title: 'Active Orders', orders, servedOrders });
 }
 
 
@@ -30,7 +32,6 @@ async function serve (req, res) {
     await order.save();
     res.redirect('/orders');
 }
-
 
 
 function deleteItem(req, res) {
