@@ -55,4 +55,3 @@ async function addItem (req, res) {
     console.log(order);
      res.redirect(`/orders/${order._id}`);
 }
-
