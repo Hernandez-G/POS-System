@@ -14,6 +14,8 @@ async function orderScreen(req, res){
     res.render('orders/screen', { title: 'Active Orders', orders });
 }
 
+
+
 async function send (req, res) {
     const order = await  Order.findOne({user: req.user._id, currentForUser: true});
     order.currentForUser = false;

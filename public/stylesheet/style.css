@@ -182,7 +182,8 @@ padding: 15px;
 
 section#active-orders{
   display: grid;
-  grid-template-columns: 275px;
+  grid-template-rows: repeat(auto-fill,minmax(95px, 1fr));
+  width: 528px;
 }
 
 h3.orderItems{
