@@ -2,7 +2,6 @@
 
 <section id="order-details">
 <!-- if else statement using flounders -->
-
 <% if (order.currentForUser) { %>
     <h2> Current Order </h2>
 <% } else { %>
@@ -12,11 +11,11 @@
 <p>Order Id <%= order._id %></p>
 <hr>
 
-<h3>Items</h3>
+<h3 class="orderItems">Items</h3>
 
 <% order.items.forEach(function(item){ %>
     <div>
-        <p><%= item.name %></p>
+        <p id="listOfItems"><%= item.name %></p>
     </div>
     <!-- REMEMBER TO CHECK ROUTES! -->
     <form action="/orders/item/<%= item._id %>?_method=DELETE" method="POST">

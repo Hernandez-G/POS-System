@@ -5,14 +5,15 @@ body{
 }
 
 nav{
+  position: fixed;
+  top:0; left:0; right:0;
+  background:#fff;
+  padding:0.5rem 7%;
   display: flex;
-  justify-content: flex-end ;
-  gap: 5%;
-  font-size: 10px;
-  font-family: 'Ranchers', cursive;
-  color: #83a767;
-  text-decoration: none;
+  align-items:center;
+  justify-content:space-between;
 }
+
 
 .login {
   font-family: 'Ranchers', cursive;
@@ -22,9 +23,20 @@ nav{
   justify-content: center;
 }
 
+a.nav{
+  font-family: 'Ranchers', cursive;
+  font-size: 15px;
+  color: #83a767;
+  text-decoration: none;
+}
+
+a.nav:hover{
+  color: #6f895b 
+}
+
 a{
   font-family: 'Ranchers', cursive;
-  font-size: 10px;
+  font-size: 25px;
   color: #83a767;
   text-decoration: none;
 }
@@ -32,7 +44,6 @@ a{
 a:hover{
   color: #6f895b 
 }
-
 
 .container{
   border: solid 2px #688e4a;
@@ -44,7 +55,6 @@ a:hover{
 
 h1{
   font-family: 'Ranchers', cursive;
-
 }
 
 tr{
@@ -75,12 +85,13 @@ tr > #baked{
 
 .box {
   margin: 134px auto;
-  padding: 5px;
+  padding: 8px;
   background: #fff;
   position: relative;
-  width: 50%;
+  width: 400px;
   transition: all 0.2s ease-in-out;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 
@@ -115,12 +126,72 @@ tr > #baked{
   color: #06D85F;
 }
 
-.price{
-  font-size: 10px;
-}
 
 .content {
   display: flex;
   flex-flow: row-reverse;
   font-size: 15px;
 } 
+
+span{
+  justify-content: flex-end;
+  margin: 300px;
+}
+
+#categories{
+  display: flex;
+  justify-content: space-between;
+  margin: 35px;
+}
+
+
+#items{
+  display: flex;
+  margin: 30px;
+  gap: 0.5%;
+}
+
+.itemName{
+  font-size: 35px;
+  font-family: 'Ranchers', cursive;
+  text-align: center;
+}
+
+.order-btn{
+  color:rgb(22, 16, 16);
+ 
+}
+
+form{
+  display: flex;
+  justify-content: end;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+
+}
+
+section#order-details{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display: grid;
+margin:-9px;
+padding: 15px;
+}
+
+section#active-orders{
+  display: grid;
+  grid-template-columns: 275px;
+}
+
+h3.orderItems{
+  font-weight: bold;
+}
+
+article{
+  margin: 4px;
+  border: 1px solid;
+  padding: 8px;
+  margin-bottom:3px;
+}

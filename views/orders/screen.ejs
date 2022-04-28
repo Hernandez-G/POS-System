@@ -5,10 +5,8 @@
 <section id="active-orders">
 <% orders.forEach(function(order){ %>
     <article>
-        <p>Order ID: <%= order._id %></p>
-        <p>Order Time: <%= order.updatedAt %></p>
-
-
+        <p><strong>Order ID:</strong> <%= order._id %></p>
+        <p><strong>Order Time:</strong> <%= order.updatedAt %></p>
     </article>
     
 <% }) %>
