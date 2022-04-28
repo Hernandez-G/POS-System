@@ -1,14 +1,14 @@
 body{
   padding: 10px;
-  background-color: #e8efdd;
+  background-color: #ffffff;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 nav{
   position: fixed;
   top:0; left:0; right:0;
-  background:#fff;
-  padding:0.5rem 7%;
+  background:rgb(245, 239, 239);
+  /* padding: 1.2rem 8%; */
   display: flex;
   align-items:center;
   justify-content:space-between;
@@ -45,20 +45,31 @@ a:hover{
   color: #6f895b 
 }
 
+a#logo{
+  position: fixed;
+}
+
 .container{
   border: solid 2px #688e4a;
   width: 200px;
   height: 140px;
   border-radius: 3px;
-  background-color: #dae4d2;
+  background-color: #c8dbb9;
+}
+
+.text-center{
+  margin: 185px;
 }
 
 h1{
   font-family: 'Ranchers', cursive;
+  font-size: 40px;
+  margin-left: 15px;
+  margin-top: 35px;
 }
 
 tr{
-  font-size: 15px;
+  font-size: 18px;
   justify-content: space-between;
 }
 tr > #baked{
@@ -140,15 +151,16 @@ span{
 
 #categories{
   display: flex;
-  justify-content: space-between;
-  margin: 35px;
+  justify-content: center;
+  margin: 25px;
+  gap: 20%;
 }
 
 
 #items{
   display: flex;
   margin: 30px;
-  gap: 0.5%;
+  gap: 3%;
 }
 
 .itemName{
@@ -188,6 +200,7 @@ section#active-orders{
 
 h3.orderItems{
   font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 article{
@@ -196,3 +209,4 @@ article{
   padding: 8px;
   margin-bottom:3px;
 }
+

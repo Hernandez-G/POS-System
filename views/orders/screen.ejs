@@ -7,6 +7,9 @@
     <article>
         <p><strong>Order ID:</strong> <%= order._id %></p>
         <p><strong>Order Time:</strong> <%= order.updatedAt %></p>
+      <form action="/orders/<%= order._id %>/serve" method="POST">
+          <button> Serve </button>
+      </form>  
     </article>
     
 <% }) %>

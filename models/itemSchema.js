@@ -12,8 +12,9 @@ const itemSchema = new Schema({
         type: Number,
         required: true
     },
-
-    
+    imageFileName: {
+        type: String
+    }
 });
 
 module.exports =  itemSchema

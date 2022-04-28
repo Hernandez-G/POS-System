@@ -6,7 +6,8 @@ module.exports = {
     show,
     deleteItem,
     send,
-    orderScreen
+    orderScreen,
+    serve
 };
 
 async function orderScreen(req, res){
@@ -23,18 +24,24 @@ async function send (req, res) {
     res.redirect('/items');
 }
 
+async function serve (req, res) {
+    const order = await  Order.findById(req.params.id);
+    order.active = false;
+    await order.save();
+    res.redirect('/orders');
+}
+
 
 
 function deleteItem(req, res) {
-    Order.findOne(
-        {"items._id": req.params.itemId, "items.user": req.user._id}, function(err, order){
-            if (!order || err) return res.redirect(`/orders/${order._id}`)
-            order.items.remove(req.params.itemId);
-            order.save(function(err){
-                res.redirect(`/orders/${order._id}`);
-            });
-        }
-    )
+    Order.findOne({"items._id": req.params.itemId}, function(err, order){
+        if (!order || err) return res.redirect('/items')
+        order.items.remove(req.params.itemId);
+        console.log(req.params.itemId);
+        order.save(function(err){
+            res.redirect(`/orders/${order._id}`);
+        });
+    });
 }
 
 async function show(req, res){

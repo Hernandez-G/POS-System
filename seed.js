@@ -15,13 +15,13 @@ Item.deleteMany({})
   .then(function(results) {
     console.log(results);
     return Item.create([
-      {name: 'Latte', price: 5.25, category: 'Drinks' }, 
-      {name: 'Gibraltar', price: 3.25, category: 'Drinks' }, 
-      {name: 'Cappuccino', price: 4.25, category: 'Drinks' }, 
-      {name: 'Espresso', price: 2.25, category: 'Drinks' }, 
-      {name: 'Concha', price: 3.25, category: 'Pastries' }, 
-      {name: 'Mantecado', price: 2.25, category: 'Pastries' }, 
-      {name: 'Puerquito', price: 2.15, category: 'Pastries' }
+      {name: 'Latte', price: 5.25, category: 'Drinks', imageFileName: 'images/latte.png' }, 
+      {name: 'Gibraltar', price: 3.25, category: 'Drinks', imageFileName: 'images/latte.png' }, 
+      {name: 'Cappuccino', price: 4.25, category: 'Drinks', imageFileName: 'images/cappuccino.png' }, 
+      {name: 'Espresso', price: 2.25, category: 'Drinks', imageFileName: 'images/espresso.png' }, 
+      {name: 'Concha', price: 3.25, category: 'Pastries', imageFileName: 'images/latte.png' }, 
+      {name: 'Mantecado', price: 2.25, category: 'Pastries', imageFileName: 'images/latte.png' }, 
+      {name: 'Puerquito', price: 2.15, category: 'Pastries', imageFileName: 'images/latte.png' }
 
     ]);
   })
