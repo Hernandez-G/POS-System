@@ -4,6 +4,7 @@ body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
 nav{
   position: fixed;
   top:0; left:0; right:0;
@@ -59,11 +60,12 @@ a#logo{
 }
 
 .container{
-  border: solid 2px #688e4a;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: solid 2px #d5ebc3;
   width: 272px;
   height: 100px;
   border-radius: 3px;
-  background-color: #c8dbb9;
+  background-color: #dff5cd;
 }
 
 .text-center{
