@@ -1,4 +1,4 @@
-# PROJECT 2: Cafe DeLaSol :coffee: (P2)
+# PROJECT 2: POS-System :receipt: (P2)
 
 ![Logo](public/images/Logo.png)
 
