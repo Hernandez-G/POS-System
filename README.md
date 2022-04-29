@@ -1,4 +1,4 @@
-# PROJECT 2: Cafe DeLaSol (P2)
+# :coffee: PROJECT 2: Cafe DeLaSol (P2)
 
 <h1 align ="center">
 <h1>:pencil: Description</h1>
