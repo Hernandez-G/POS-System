@@ -1,7 +1,6 @@
 <%- include('../partials/header')%>
 
 <section id="order-details">
-<!-- if else statement using flounders -->
 <% if (order.currentForUser) { %>
     <h2> Current Order </h2>
 <% } else { %>
@@ -12,7 +11,6 @@
 <hr>
 
 <h3 class="orderItems">Items</h3>
-
 <% order.items.forEach(function(item){ %>
     <p id="listOfItems"><%= item.name %></p>
     <form action="/orders/item/<%= item._id %>?_method=DELETE" method="POST">
@@ -24,11 +22,7 @@
 <a href="/items">Return to Items</a>
 <form action="/orders/send" method="POST">
     <button type="submit">SEND ORDER</button>
-
 </form>
-
 </section>
-
-
 
 <%- include('../partials/footer')%>
