@@ -21,6 +21,7 @@
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongoDB)
 ![Node.js](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
 ![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
+![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello)
 
 <h2>:page_facing_up: Future Updates:</h2>
 <li>Have a styled "Home" page.</li>
