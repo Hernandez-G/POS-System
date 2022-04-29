@@ -1,5 +1,7 @@
 # PROJECT 2: Cafe DeLaSol :coffee: (P2)
 
+<header><a href="https://imgur.com/mFcRi72"></header>
+
 <h1 align ="center">
 <h1>:pencil: Description</h1>
 <a href="https://pos-system-web-gh.herokuapp.com/">[Launch App]<a> :&nbsp :&nbsp
