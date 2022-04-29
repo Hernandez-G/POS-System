@@ -18,7 +18,7 @@ function index(req, res){
 
 function show(req, res) {
     Item.findById(req.params.id, function(err, item){
-        Order.find({item: Schema.Types.ObjectId}, function(err, orders) {
+    Order.find({item: Schema.Types.ObjectId}, function(err, orders) {
         res.render('/orders', { title: 'Orders', item, orders});
         });
     });

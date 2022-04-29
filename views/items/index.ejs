@@ -15,16 +15,16 @@
     <div>
      <a class="button" href="#popup<%= idx %>"> <%= item.name %> </a>
      <div id="popup<%= idx %>" class="overlay">
-       <div class="box">
+      <div class="box">
          <a class="close" href="#">&times;</a>
          <h2 class="itemName"> <%= item.name %> </h2>
          <div class="price"><span>$<%= item.price %></span></div>
          <img src="<%= item.imageFileName %>">
-         <div class="content">
+          <div class="content">
            <br>
           </div>
           <form action="/orders/item/<%= item._id %>" method="POST">
-            <button class="order-btn" type="submit">Add to Order</button>
+          <button class="order-btn" type="submit">Add to Order</button>
         </form>
       </div>
     </div>
