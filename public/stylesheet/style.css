@@ -26,11 +26,13 @@ nav{
   justify-content: center;
 }
 
+
 a.nav {
   font-size: 14px;
   letter-spacing: 2px;
   color: #83a767;
   text-decoration: none;
+  margin: 15px;
 }
 
 a.nav:hover {
@@ -125,6 +127,7 @@ img {
 
 
 #cafeTitle{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 0.5px;
   font-size: 22px;
   margin-left: 37px;
@@ -169,7 +172,6 @@ img {
 
 span{
   justify-content: flex-end;
-  margin: 300px;
 }
 
 #categories{
@@ -203,6 +205,7 @@ span{
 
 .order-btn{
   color:rgb(22, 16, 16);
+  border-radius: 5px;
  
 }
 
