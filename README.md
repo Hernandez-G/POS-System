@@ -16,5 +16,6 @@
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-333?style=flat&logo=bootstrap)
 
 <h2 align="left"><h2>
-<h2>Screenshots</h2> https://imgur.com/a/ENqjtnL
+<h2>Screenshots</h2>
+<a href="https://imgur.com/a/ENqjtnL">https://imgur.com/a/ENqjtnL</a>
 
