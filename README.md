@@ -2,8 +2,8 @@
 
 <h1 align ="center">
 <h1>:pencil: Description</h1>
-<a href="https://pos-system-web-gh.herokuapp.com/">[Launch App]<a>
-<a href="https://imgur.com/a/ENqjtnL">[Screenshots]</a>
+<a href="https://pos-system-web-gh.herokuapp.com/">[Launch App]<a> :&nbsp :&nbsp
+<a href="https://imgur.com/a/ENqjtnL">[Screenshots]</a>  :&nbsp :&nbsp
 <a href="https://trello.com/b/l4iqfeFl/project-2">[Trello]</a>
 <p>Developed a Point-of-Sales System where users are able to order their favorite drinks and pastries.</p>
 
@@ -22,5 +22,6 @@
 <h2>:page_facing_up: Future Updates:</h2>
 <li>Have a styled "Home" page.</li>
 <li>Add customization options to order.</li>
-<li>Create a "Served Orders" page</li>
-<li>Add a description box to each of the listed items</li>
+<li>Create a "Served Orders" page.</li>
+<li>Add a description box to each of the listed items.</li>
+<li>Have an option to add multiple items on the same order using a dropdown menu.</li>
