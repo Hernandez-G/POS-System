@@ -4,6 +4,8 @@
 
 <h1 align ="center">
 <h1>:pencil: Description</h1>
+<br>
+<br>
 <a href="https://pos-system-web-gh.herokuapp.com/">[Launch App]<a> :&nbsp :&nbsp
 <a href="https://imgur.com/a/ENqjtnL">[Screenshots]</a>  :&nbsp :&nbsp
 <a href="https://trello.com/b/l4iqfeFl/project-2">[Trello]</a>
