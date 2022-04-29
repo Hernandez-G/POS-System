@@ -41,14 +41,6 @@ a.nav {
   margin: 15px;
 }
 
-a.nav:hover {
-  color: #6f895b;
-  background: rgb(195, 224, 195);
-  width: 15%;
-  height: 25%;
-  box-shadow: #333;
-  box-sizing: border-box;
-}
 
 a{
   font-size: 25px;
