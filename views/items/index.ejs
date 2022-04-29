@@ -2,9 +2,12 @@
 
 <section id="categories">
   <% categories.forEach(function(c) { %>
-    <a href="/items?category=<%= c %>"><%= c %></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a class="category-bar" href="/items?category=<%= c %>"><%= c %></a><div class="categoryDivider"></div>
   <% }); %>
 </section>
+
+
+
 
 <section id="items">
   <% items.forEach(function(item, idx) { %> 

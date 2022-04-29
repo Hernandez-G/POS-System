@@ -11,7 +11,7 @@ module.exports = {
 };
 
 async function orderScreen(req, res){
-    //oldest at the top
+    //oldest at the top (updateAt) > (-updateAt) = newest at the top
     const orders = await Order.find({active: true}).sort('updatedAt');
     const servedOrders = await Order.find({active: false, currentForUser: false}).sort('-updatedAt');
     res.render('orders/screen', { title: 'Active Orders', orders, servedOrders });
