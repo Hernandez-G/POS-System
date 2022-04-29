@@ -2,7 +2,7 @@
 
 <h1 align ="center">
 <h1>:pencil: Description</h1>
-<a href="https://pos-system-web-gh.herokuapp.com/"><a>
+<a href="https://pos-system-web-gh.herokuapp.com/">[Launch App]<a>
 <p>Developed a Point-of-Sales System where users are able to order their favorite drinks and pastries.</p>
 
 
