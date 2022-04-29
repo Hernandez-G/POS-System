@@ -1,7 +1,8 @@
-# :coffee: PROJECT 2: Cafe DeLaSol (P2)
+# PROJECT 2: Cafe DeLaSol :coffee: (P2)
 
 <h1 align ="center">
 <h1>:pencil: Description</h1>
+<a href="https://pos-system-web-gh.herokuapp.com/">
 <p>Developed a Point-of-Sales System where users are able to order their favorite drinks and pastries.</p>
 
 
