@@ -1,6 +1,6 @@
 # PROJECT 2: Cafe DeLaSol :coffee: (P2)
 
-![Logo](/images/Logo.png)
+![Logo](public/images/Logo.png)
 
 <h1 align ="center">
 <h1>:pencil: Description</h1>
