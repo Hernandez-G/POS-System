@@ -18,6 +18,7 @@
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 ![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-333?style=flat&logo=bootstrap)
+![MongoDB](https://img.shields.io/badge/-Mongodb-333?style=flat&logo=mongodb)
 
 <h2>:page_facing_up: Future Updates:</h2>
 <li>Have a styled "Home" page.</li>
