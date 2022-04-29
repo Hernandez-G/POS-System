@@ -1,6 +1,6 @@
 # PROJECT 2: Cafe DeLaSol :coffee: (P2)
 
-![Logo](/home/gaby/code/POS-SYSTEM/public/images/Logo.png)
+![Logo](/images/Logo.png)
 
 <h1 align ="center">
 <h1>:pencil: Description</h1>
