@@ -32,4 +32,4 @@
 <li>Add customization options to order.</li>
 <li>Create a "Served Orders" page.</li>
 <li>Add a description box to each of the listed items.</li>
-<li>Have an option to add multiple items on the same order using a dropdown menu.</li>
+<li>Have an option to add multiple items.</li>
