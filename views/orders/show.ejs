@@ -14,13 +14,11 @@
 <h3 class="orderItems">Items</h3>
 
 <% order.items.forEach(function(item){ %>
-        <p id="listOfItems"><%= item.name %></p>
-    <!-- REMEMBER TO CHECK ROUTES! -->
+    <p id="listOfItems"><%= item.name %></p>
     <form action="/orders/item/<%= item._id %>?_method=DELETE" method="POST">
         <button type="submit">remove</button>
     </form>
     <hr>
-    <!-- REMEMBER TO CHECK ROUTES! -->
 <% }) %>
 
 <a href="/items">Return to Items</a>
