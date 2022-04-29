@@ -1,9 +1,5 @@
 # PROJECT 2: Cafe DeLaSol :coffee: (P2)
 
-<header>
-<img href="<blockquote class="imgur-embed-pub" lang="en" data-id="mFcRi72"><a href="https://imgur.com/mFcRi72">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>">
-</header>
-
 <h1 align ="center">
 <h1>:pencil: Description</h1>
 <a href="https://pos-system-web-gh.herokuapp.com/">[Launch App]<a> :&nbsp :&nbsp
