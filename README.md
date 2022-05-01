@@ -9,7 +9,7 @@
 <a href="https://trello.com/b/l4iqfeFl/project-2">[Trello]</a>
 <br>
 <br>
-<p>Developed a Point-of-Sales System where users are able to order their favorite drinks and pastries.</p>
+<p>Developed a Point-of-Sales System where users are able to take orders. </p>
 
 
 
